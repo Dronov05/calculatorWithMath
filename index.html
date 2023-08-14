@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.1/math.js"
+      integrity="sha512-iC7V/1gOwGXzYGJ9f860Jq9K/YrL+AsSI7k/03F98EkX1GEsP2VjWdHgWpwhinDTe+HGznwCnVdR2d/o2In9bA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="main.js" defer></script>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="container">
+         <div class="calculator">
+            <h3 class="calculator__title">Калькулятор</h3>
+            <div class="calculator__inputs">
+               <output class="calculator__output">0</output>
+            </div>
+            <div class="calculator__buttons">
+               <div class="calculator__buttons-top">
+                  <button value="Clear" class="calculator__btn flex-grow" id="clear">Clear</button>
+                  <button value="CE" class="calculator__btn divide-btn" id="CE-btn">⌦</button>
+                  <button value="/" class="calculator__btn divide-btn" id="divide-btn">&#x00F7</button>
+               </div>
+               <div class="calculator__buttons-middle">
+                  <button value="7" class="calculator__btn">7</button>
+                  <button value="8" class="calculator__btn">8</button>
+                  <button value="9" class="calculator__btn">9</button>
+                  <button value="*" class="calculator__btn" id="multiply">&#0215</button>
+                  <button value="4" class="calculator__btn">4</button>
+                  <button value="5" class="calculator__btn">5</button>
+                  <button value="6" class="calculator__btn">6</button>
+                  <button value="-" class="calculator__btn" id="minus">-</button>
+                  <button value="1" class="calculator__btn">1</button>
+                  <button value="2" class="calculator__btn">2</button>
+                  <button value="3" class="calculator__btn">3</button>
+                  <button value="+" class="calculator__btn" id="plus">+</button>
+                  <button value="(" class="calculator__btn">(</button>
+                  <button value="0" class="calculator__btn">0</button>
+                  <button value=")" class="calculator__btn">)</button>
+                  <button value="=" class="calculator__btn" id="answer">=</button>
+               </div>
+               <div class="calculator__buttons-bt">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
