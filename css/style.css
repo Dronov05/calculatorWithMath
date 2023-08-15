@@ -164,6 +164,10 @@ body {
   background-color: #fff;
 }
 
+.output-font_size {
+  font-size: 20px;
+}
+
 .flex-grow {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
