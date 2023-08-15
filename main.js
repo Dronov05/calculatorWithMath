@@ -17,17 +17,19 @@ function deleteInitialValue() {
       output.textContent = ''
    }
 }
-
 function calc(value) {
    if (value.match(/=|Enter/)) {
       try {
          output.textContent = Math.trunc(math.evaluate(output.textContent))
       } catch {
+         output.classList.add('output-font_size')
          const currentVal = output.textContent
          const newVal = 'недопустимое выражение'
          output.textContent = newVal
+
          setTimeout(() => {
             output.textContent = currentVal
+            output.classList.remove('output-font_size')
          }, 1000)
       }
    } else if (value === 'Clear') {
