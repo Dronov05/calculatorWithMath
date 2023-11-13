@@ -24,8 +24,7 @@ function calc(value) {
       } catch {
          output.classList.add('output-font_size')
          const currentVal = output.textContent
-         const newVal = 'недопустимое выражение'
-         output.textContent = newVal
+         output.textContent = 'недопустимое выражение'
 
          setTimeout(() => {
             output.textContent = currentVal
